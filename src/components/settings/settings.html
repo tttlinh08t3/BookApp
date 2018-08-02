@@ -1,0 +1,19 @@
+<div id="settings" class="settings">
+    <!-- <h2>Welcome to Book App</h2> -->
+   
+    <div class="container-fluid">
+        <span>{{count}}</span>
+        <template v-if="isLoggedIn">
+                <label for="username">Username:</label> 
+                <input type="text" class="form-control" disabled/>
+            <button type="button" class="btn btn-primary" v-on:click="logout()">Logout</button>
+        </template>
+        <template v-else>
+            
+            <button type="button" class="btn btn-primary" v-on:click="goToLogin()">Login</button>
+        </template> 
+    </div>
+    
+
+   
+</div>

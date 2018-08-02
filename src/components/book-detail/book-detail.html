@@ -1,0 +1,14 @@
+<div id="book-detail">
+    <h1>Welcome to Book App</h1>
+   
+    <div class="form-group">
+        <label for="des">Title </label>
+        <input type="text" name="des" v-model="book.des" :class="{'form-control':true,'is-invalid':errors.has('des')}" 
+        placeholder="Please input des">
+        <div class="invalid-feedback">{{ errors.first('des') }}</div>
+      </div>
+      <div class="form-group" style="margin-top:20px;">
+        <button class="btn btn-success"   v-on:click="onSave()">Save</button>
+      </div>
+</div>
+

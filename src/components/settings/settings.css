@@ -1,0 +1,35 @@
+.book-list {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.book-picture {
+    width: 130px;
+    height: 130px;
+}
+
+.book-info {
+    padding-left: 10px;
+}
+
+.list-group-item:first-child, .list-group-item:last-child {
+    border-radius: 0;
+}
+
+@media only screen and (max-width: 576px){
+    .book-picture {
+        width: 90px;
+        height: 90px;
+        padding-right: 10px;
+    }
+    .book-info {
+        padding-left: 5px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .book-picture {
+        width: 150px;
+        height: 150px;
+    }
+}

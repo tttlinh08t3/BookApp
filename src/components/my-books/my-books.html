@@ -1,0 +1,28 @@
+<div id="book-list" class="book-list">
+    <!-- <h2>Welcome to Book App</h2> -->
+   
+    <div class="container-fluid">
+        <div class="list-group" v-for="book in bookList">
+            <a class="list-group-item">
+                <div class="row">
+                    <div class="col-md-3 col-4">
+                        <div>
+                            <img class ="book-picture" src="../../assets/images/book-thief.jpg"/>
+                        </div>
+                    </div>
+                    
+                    <div class="book-info">
+                        <div class="font-weight-bold"> {{ book.title }}</div>
+                        <div class="font-weight-light">Author: {{ book.authorId }}</div> 
+                        <span class="font-italic">Pulished date: </span> <span>{{ book.pusblishDate }}</span>
+                    </div>        
+                </div>    
+            </a>
+
+        </div>
+        <infinite-loading @infinite="loadMore" spinner="bubbles"></infinite-loading>  
+    </div>
+    
+
+   
+</div>
